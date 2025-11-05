@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Input fields -->
+            <EditText
+                android:id="@+id/et_pno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="P.no" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/et_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rank" />
+
+            <EditText
+                android:id="@+id/et_workshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Workshop no" />
+
+            <EditText
+                android:id="@+id/et_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact no" />
+
+            <EditText
+                android:id="@+id/et_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place to visit" />
+
+            <EditText
+                android:id="@+id/et_hoist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hoist name" />
+
+            <Button
+                android:id="@+id/btn_add_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Entry (Give Card Number)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Exit by card number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark Exit (enter card number):" />
+
+            <EditText
+                android:id="@+id/et_card_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card number" />
+
+            <Button
+                android:id="@+id/btn_mark_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mark Exit" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btn_export"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Export today's data to CSV (Excel)" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
